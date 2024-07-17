@@ -152,3 +152,12 @@ console.log(zamliMaaslar);
 
 const zamli = salary.filter((net) => net<50000).map(ücret => ücret*1.2)
 console.log(zamli);
+
+
+/* ------------- REDUCE ------------- */
+
+const salaries1 = [ 90000, 75000, 60000, 40000, 30000]
+
+let toplamMaas = 0;
+salaries.map((maaş) =>(toplamMaas += maaş))
+console.log(toplamMaas);
