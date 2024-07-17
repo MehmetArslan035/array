@@ -158,6 +158,8 @@ console.log(zamli);
 
 const salaries1 = [ 90000, 75000, 60000, 40000, 30000]
 
-let toplamMaas = 0;
-salaries.map((maaş) =>(toplamMaas += maaş))
+// let toplamMaas = 0;
+// salaries.map((maaş) =>(toplamMaas += maaş))
+
+const toplamMaas = salaries.reduce((toplam, maas) => toplam + maas, 0)
 console.log(toplamMaas);
