@@ -163,3 +163,7 @@ const salaries1 = [ 90000, 75000, 60000, 40000, 30000]
 
 const toplamMaas = salaries.reduce((toplam, maas) => toplam + maas, 0)
 console.log(toplamMaas);
+
+const sayilarim =[4,6,8,10]
+const carpim =sayilarim.reduce((acc, value) => acc * value, 1);
+console.log(carpim);
