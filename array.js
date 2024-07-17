@@ -167,3 +167,24 @@ console.log(toplamMaas);
 const sayilarim =[4,6,8,10]
 const carpim =sayilarim.reduce((acc, value) => acc * value, 1);
 console.log(carpim);
+
+
+/* ------------- OTHERS ------------- */
+
+const ages = [18,22,78,44,89,25];
+const check = ages.every((age)=> age >=18);
+check ? console.log("all ages are over 18"): console.log("some are under 18");
+
+/* ------------- some() ------------- */
+
+const overcheck = ages.some(age => age>50);
+console.log(overcheck);
+
+// find()
+
+const büyükyas1 = ages.find((age) => age > 30);
+
+const büyükyas1last = ages.findLast((age) => age > 30);
+
+console.log(büyükyas1);
+console.log(büyükyas1last);
